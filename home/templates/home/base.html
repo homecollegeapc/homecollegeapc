@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home College{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'home/style.css' %}">
+</head>
+<body>
+    <!-- Header with Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="{% url 'home' %}">
+                <img src="{% static 'home/images/logo.jfif' %}" alt="College Logo">
+            </a>
+        </div>
+         <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'programs' %}">Programs</a></li>
+            <li><a href="{% url 'admission' %}">Admissions</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Block -->
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Home College for Girls, Ali Pur Chattha. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<section class="about">
+    <div class="about-container">
+        <h2>About Home College for Girls</h2>
+        <p>Established in 2019, Home College for Girls, Ali Pur Chattha, is dedicated to empowering young women through quality education. Our college offers diverse academic programs, fostering innovation, leadership, and excellence.</p>
+
+        <div class="director-section">
+            <img src="{% static 'home/images/building.jpg' %}" alt="Director" class="director-image">
+            <div class="director-message">
+                <h3>Message from the Director</h3>
+                <p>Welcome to Home College for Girls, where we nurture talent, encourage critical thinking, and prepare students for a brighter future. Join us on this journey of academic excellence and personal growth.</p>
+            </div>
+        </div>
+
+        <a href="{% url 'programs' %}" class="learn-more-btn">Explore Our Programs</a>
+    </div>
+</section>
+{% endblock %}

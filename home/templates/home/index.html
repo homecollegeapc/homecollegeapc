@@ -1,0 +1,88 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block title %}Home - Home College for Girls{% endblock %}
+
+{% block content %}
+<section class="hero-full">
+    <img src="{% static 'home/images/building.jpg' %}" alt="Home College for Girls">
+    <div class="hero-overlay">
+        <h1>Welcome to Home College for Girls</h1>
+        <p>Empowering young women through excellence in education since 2020.</p>
+        <a href="{% url 'about' %}" class="btn">Learn More</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-home">
+    <div class="container">
+        <h2>Director Message</h2>
+        <section class="director-message">
+            <h2>Message from the Director</h2>
+            <p>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+            <p>Dear Students, Parents, and Well-Wishers,</p>
+            <p>Welcome to <strong>Home College for Girls, Ali Pur Chattha</strong>—an institution committed to academic excellence, character building, and empowering young women for a brighter future.</p>
+            <p>Since our establishment in <strong>1992</strong>, we have been dedicated to providing <strong>quality education</strong> that nurtures intellectual growth, moral values, and leadership skills. Our well-equipped <strong>science and computer labs, library, and extracurricular activities</strong> create a holistic learning environment where students can excel in academics and personal development.</p>
+            <p>We take pride in our <strong>highly qualified faculty, outstanding student achievements, and a legacy of producing future leaders</strong>. Whether in <strong>Intermediate or Graduation programs</strong>, our goal is to provide every student with the <strong>knowledge, confidence, and skills</strong> needed to thrive in a rapidly evolving world.</p>
+            <p>We warmly welcome you to be part of <strong>our journey toward excellence</strong>. May Allah (SWT) bless us all with success in our endeavors.</p>
+            <p><strong>Warm Regards,</strong><br>
+            <strong>[Director's Name]</strong><br>
+            Director, Home College for Girls, Ali Pur Chattha</p>
+       
+        </section>
+        <a href="{% url 'about' %}" class="btn">Read More</a>
+    </div>
+</section>
+
+<!-- Programs Section -->
+<section class="programs-home">
+    <div class="container">
+        <h2>Our Programs</h2>
+        <div class="programs-grid">
+            <div class="program-card">
+                <h3>Intermediate Programs</h3>
+                <ul>
+                    <li>FSc Pre-Medical</li>
+                    <li>FSc Pre-Engineering</li>
+                    <li>ICS</li>
+                    <li>ICom</li>
+                    <li>FA</li>
+                </ul>
+            </div>
+            <div class="program-card">
+                <h3>Graduation Programs</h3>
+                <ul>
+                    <li>ADP in Science</li>
+                    <li>ADP in Commerce</li>
+                </ul>
+            </div>
+        </div>
+        <a href="{% url 'programs' %}" class="btn">View All Programs</a>
+    </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="achievements">
+    <div class="container">
+        <h2>Our Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <h3>5000+ Graduates</h3>
+            </div>
+            <div class="achievement-card">
+                <h3>80% University Admissions</h3>
+            </div>
+            <div class="achievement-card">
+                <h3>Ranked #1 in the Region</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="contact-cta">
+    <h2>Get in Touch with Us</h2>
+    <p>Have questions? Contact us today for more information.</p>
+    <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+</section>
+
+{% endblock %}

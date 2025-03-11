@@ -1,0 +1,13 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block title %}Admissions - Home College for Girls{% endblock %}
+
+{% block content %}
+
+<section class="admission-section">
+    <h2>Admissions Open Now!</h2>
+    <p>Visit the college administration office for more information or contact us.</p>
+    <a href="{% url 'contact' %}" class="btn">Contact Us</a>
+</section>
+
+{% endblock %}
